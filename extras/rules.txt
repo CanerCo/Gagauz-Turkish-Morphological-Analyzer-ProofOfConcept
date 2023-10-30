@@ -1,0 +1,47 @@
+!!! EPENTHESIS !!!
+
+
+# Deletion of i after surface level Vowels 
+define DeletionI %{i%} -> 0 || Vowels "^" _ ;
+
+# {s} become 0 when intervocalic
+define IntervocalicS %{s%} -> 0 || [ ArchiCons | Consanants ] "^" _ Vowels ;
+
+# {и} Epenthetic i in consonant clusters
+define Deletionи %{и%} -> 0 || _ .#. ; 
+
+
+!!! ASSIMILATION !!!
+
+
+# L changed to n when after a nasal consonant
+define AssimilationL %{L%} -> n || Nasalcons "^" _ ;
+
+# No {N} after consonant
+define NoN n -> 0 || Consonants "^" _ ;
+
+# Consonant elision intervocalic
+define ConsanantElision Cx -> 0 || Vowels _ Vowels;
+
+# Vowel assimilation in dative
+define DativeVowelAssimilation [u|ı] -> 0 || _  Cx "^" %{й} %{A%} ;
+
+# Nasalisation of nk followed by vowel
+define NasalisationK %{к%} -> g || n _ "^" Vowels ; 
+
+
+!!! MORPHOLOGY !!!
+
+# Delete n before genitive case and -DIr modality
+define DeleteN n -> 0 || _ "^" %{N%} %{I%} n ,,
+               n -> 0 || _ "^" %{й%} %{D%} %{I%} r ;
+
+# {n} become 0 at the end 
+define nDeletion %{n%} -> 0 ||  _ .#. ;
+
+
+# No {N} after consonant
+define DeletionNAfterConsonant %{N%} -> 0 || [ ArchiCons | Consonants ] "^" _ ;
+
+# {л} to n in passive following l
+define PassiveFollowing %{л%} -> n || l %{i%} _ ;
