@@ -1,0 +1,182 @@
+!! Gagauz Lexc !!
+
+Multichar_Symbols +N +Pl +Sg +V +P1sg +P2sg +P3sp +P1pl +P2pl +Nom +Gen +Dat +Acc +Loc +Abl +Ins +P1 +P2 +P3 +Num +Subst +Ord +Dist +V +İfi +Cond +Nfh +Px1sg +Px2sg +Px3sp +Px2pl +Px3pl +İmp +Neg +Gpraor +Pres +Aor +Prog +Fut +Ger +Gerpast +Gerabst +Gernfh +Gpr_fut +Gpr_past +Gpr_rsub +Gpr_nfh +Gpr_aor +Gna_per +Gna_impf +Gna_ferq +Gna_when1 +Gna_when2 +Gna_time1 +Gna_time2 +Gna_cond +Gna_2 +Iv +Abil +Coop +Pass +Cau
+
+
+LEXICON Root
+Verb ;
+
+LEXICON Verb
+!al V-GNA;
+sırala V-DER-NOM;
+
+
+!!!! VERB !!!!
+
+LEXICON V-PERS-S1
++P1+Sg:^ım # ; 
++P2+Sg:^ın # ; 
++P3+Sg:0 # ; 
++P1+Pl:^iz # ;
++P2+Pl:^inIz # ; 
++P3+Pl:^LAr # ; 
+
++İfi:^йDI V-PERS-S2 ;
++Cond:^йsA V-PERS-S2 ;
+
+LEXICON V-PERS-S2
++P1+Sg:^im # ; 
++P2+Sg:^in  # ; 
++P3+Sg:0 # ; 
++P1+Pl:^iz # ;
++P2+Pl:^inIz # ; 
++P3+Pl:^LAr # ; 
+
+LEXICON V-PERS-FUT
++P1+Sg:A^m # ; 
++P2+Sg:A^n # ; 
++P3+Sg:e^k # ; 
++P1+Pl:a^z # ;
++P2+Pl:a^nIz # ; 
++P3+Pl:ek^LA%r # ;
+
+LEXICON V-PERS-AOR
++P1+Sg:^Im # ; 
++P2+Sg:^sIn # ; 
++P3+Sg:0 # ;
++P1+Pl:a^z # ;
++P2+Pl:a^nIz # ; 
++P3+Pl:ek^LA%r # ; 
+
++İfi:^йDI V-PERS-S2 ;
++Nfh:^йmIş V-PERS-S1 ;
+
+
+LEXICON V-PERS-POSS
++Px1sg:^im #  ;
++Px2sg:^in # ;
++Px3sp:^sIn #  ;
++Px1pl:^imIz # ;
++Px2pl:^inIz #  ;
+                         # ;
+
+LEXICON V-PERS-POSS-FUT
++Px1sg:A^m # ; 
++Px2sg:A^n # ; 
++Px3sg:e^k # ; 
++Px1pl:a^z # ;
++Px2pl:a^nIz # ; 
++Px3pl:ek^LAr # ; 
+
+LEXICON V-IMPER
+! The imperative, "çok yaşa!", "sigara içmeyin!"
++İmp+P1+Sg:^йAyIm # ;
++İmp+P2+Sg: # ;
++İmp+P3+Sg:^sIn # ;
++İmp+P1+Pl:^йAlIm # ;
++İmp+P2+Pl:^йIn # ;
++İmp+P2+Pl:^йInIz # ; 
++İmp+P3+Pl:^sIn^LAr # ;
+
+LEXICON GER-N-INFL-COMMON
+CASES ;
+POSSESSIVES ;
+
+LEXICON GER-SUBST
+GER-N-INFL-COMMON ; 
++Pl:^LAr GER-N-INFL-COMMON ;
+
+LEXICON V-GER
++Ger:^mAk GER-SUBST  ;
++Gerpast:^DIk GER-SUBST ;
++Gerabst:^йIş GER-SUBST ;
++Gernfh:^mIş GER-SUBST  ;
+
+LEXICON V-GPR-SUBST
++Subst: SUBST ;
++Subst+Pl:^LAr SUBST ;
+
+LEXICON V-GPR
+
++Gpr_fut:^йAc      V-PERS-POSS-FUT ; 
++Gpr_past:^DIk V-PERS-POSS ;
+
++Gpr_rsub:^йAn     V-GPR-SUBST ;
++Gpr_nfh:^mIş V-GPR-SUBST ;
++Neg+Gpr_past:^mA^DIk POSSESSIVES ;
++Gpr_aor:^Ar #  ;
+
+LEXICON V-GNA
+
++Gna_per:^йIp # ;
++Gna_impf:^йArAk # ;
++Gna_ferq:^A # ;
+
++Gna_when1:^йIncAk # ;
++Gna_when2:^DIynAn # ;
+
++Gna_time1:^DIkçA # ;
++Gna_time2:^DIktAn # ;
+
++Neg+Gna:^mAdAAn # ;
+
++Gna_cond:^sA V-PERS-S2 ; 
++Gna_while:^kAn # ;
++Gna_2:^ArsA # ;
+
+
+LEXICON V-FINITE-IRREG-NEG
+
++Neg+Gpraor:^mAz # ; 
+
+LEXICON V-FINITE-REGULAR_NEG
+
++İfi:^dı V-PERS-S2 ;
++Nfh:^mIş V-PERS-S1 ;
++Cond:^sa V-PERS-S2 ;
+
+                         V-IMPER ;
+
+LEXICON V-COMMON 
+                         V-FINITE-REGULAR_NEG ;
+                         V-NONFINITE ;
+                         V-FINITE-IRREG-NEG ;
+
++Pres:^er        V-PERS-AOR ;
+
++Neg+Pres:^mA^er V-PERS-AOR ; 
+
++Aor:^ar         V-PERS-AOR ;
++Aor:^ar         V-FINITE-REGULAR_NEG ;
+
++Prog:^ayor      V-PERS-S2 ; 
+
++Fut:^йac    V-PERS-FUT ;
++Neg+Fut:^mA^йac    V-PERS-FUT ;
+
++Nfh:^mIş        V-FINITE-REGULAR_NEG ;
+
++Neg:^mA         V-FINITE-REGULAR_NEG ;
++Neg:^mA         V-NONFINITE ;
+
+LEXICON V-ABIL
+
++Abil+Neg:^йama V-COMMON ;
++Abil:^йabil    V-COMMON ;
+
+LEXICON V-DER
++Coop:^ış  V-ABIL ;
++Pass:+iл  V-ABIL ;       
++Caus:^dır V-ABIL ;    
+
+LEXICON V-DER-NOM
++Coop:^ış  # ;
++Pass:+iл  # ;       
++Caus:^dır # ;   
+
+LEXICON V-IV 
++V+Iv:· V-DER ;   
+
+LEXICON V-TV 
++V+TV:"·" V-DER ;
+
