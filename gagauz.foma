@@ -1,0 +1,36 @@
+!!! gagauz.foma !!!
+
+define Vowels [ a | e | ê | ä | i | ı | o | ö | u | ü | і];
+
+define Consonants [ b | c | ç | d | f | g | h | j | k | l | m | n | p | r | s | ş | ș | t | ţ | ț | v | y | z];
+
+define Nasalcons [n | m];
+
+define HardVowels [a | e | ê | ä | i | ı | o | ö | u | ü | і];
+
+define SoftVowels [e | ä | i | ö | ü | і]; 
+
+define RoundVowels [o | ö | u | ü];
+
+read lexc gagauz.lexc
+define Lexicon;
+
+
+#{L} changed to n when after a Nasal consonant
+define LDeletion l -> n || Nasalcons "^" _ ;
+
+#s become 0 when intervocalic
+define Sdeletion s -> 0 || Vowels _ Vowels;
+
+# Deletion of i after surface level Vowels 
+define DeletionI i -> 0 || Vowels "^" _ ;
+
+#Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+read lexc gagauz.lexc
+define Lexicon
+
+define Grammar Lexicon .o. LDeletion .o. Sdeletion .o. DeletionI .o.  Cleanup;
+
+regex Grammar;
