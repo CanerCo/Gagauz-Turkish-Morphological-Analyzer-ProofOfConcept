@@ -1,1 +1,39 @@
+!! Noun Lexc !!
 
+Multichar_Symbols +N +Pl +Sg +V +P1sg +P2sg +P3sp +P1pl +P2pl +Nom +Gen +Dat +Acc +Loc +Abl +Ins +P1 +P2 +P3 +Num +Subst +Ord +Dist +İfi +Cond +Nfh +Px1sg +Px2sg +Px3sp +Px2pl +Px3pl +İmp +Neg +Gpraor +Pres +Aor +Prog +Fut +Ger +Gerpast +Gerabst +Gernfh +Gpr_fut +Gpr_past +Gpr_rsub +Gpr_nfh +Gpr_aor +Gna_per +Gna_impf +Gna_ferq +Gna_when1 +Gna_when2 +Gna_time1 +Gna_time2 +Gna_cond +Gna_2 +Iv +Abil +Coop +Pass +Cau
+
+LEXICON Root
+Noun ;
+
+LEXICON Noun
+
+araba N1; ! Deletion of i
+yakın N1; ! L becomes n after nasal consonant
+azınnık:azın^lık N1; 
+
+!!! NOUN !!!
+ 
+LEXICON Possesives
++P1sg:^im #;
++P2sg:^in #;
++P3sp:^sin #;
++P1pl:^imiz #;
++P2pl:^iniz #;
+
+LEXICON Cases
++Nom: #;
++Gen:^nın #;
++Loc:^da #;
++Abl:^nan #;
++Abl:^dan #;
++Acc:^nı #;
++Dat:^na #;
+
+LEXICON Plural
++Pl:^lar #; 
+
+LEXICON N1
++N:0 #;
++N: Plural;
++N: Possesives;
++N: Cases; 
