@@ -12,8 +12,13 @@ Numeral ;
 LEXICON Noun
 
 araba N1; ! Deletion of i
+ev N1; 
 yakın N1; ! L becomes n after nasal consonant
 azınnık:azın^lık N1; 
+adam N1;
+gagavuz;
+
+
 
 LEXICON Numeral
 bir NUM;
