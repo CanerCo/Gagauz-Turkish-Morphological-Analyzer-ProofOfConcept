@@ -2,7 +2,7 @@
 
 Welcome to our repository dedicated to the morphological analysis of the Gagauz Turkish language. This project serves as an initial demonstration of the capabilities and structure of the analyzer.  Inspired by the design from an existing [GitHub repository](https://fomafst.github.io/morphtut.html) that offers a straightforward morphological analyzer for English, we've crafted this project to provide insights into the linguistic intricacies of Gagauz Turkish.
 
-For extracting rules and lexicon we used the [_Finite-state morphological analysis for Gagauz_ paper](http://openaccess.altinbas.edu.tr/xmlui/handle/20.500.12939/1170) and a grammar book. 
+For extracting rules and lexicon we used the paper [_Finite-state morphological analysis for Gagauz_ ](http://openaccess.altinbas.edu.tr/xmlui/handle/20.500.12939/1170) and a grammar book. 
 
 [_Özkan, N. (1996). Gagavuz Türkçesi grameri: giriş, ses bilgisi, şekil bilgisi, cümle, sözlük, metin örnekleri. (No Title)._]
 
