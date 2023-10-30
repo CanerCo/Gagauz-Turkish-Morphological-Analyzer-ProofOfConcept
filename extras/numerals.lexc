@@ -1,0 +1,56 @@
+!! Numeral Lexc !!
+
+Multichar_Symbols +N +Pl +Sg +V +P1sg +P2sg +P3sp +P1pl +P2pl +Nom +Gen +Dat +Acc +Loc +Abl +Ins +P1 +P2 +P3 +Num +Subst +Ord +Dist +İfi +Cond +Nfh +Px1sg +Px2sg +Px3sp +Px2pl +Px3pl +İmp +Neg +Gpraor +Pres +Aor +Prog +Fut +Ger +Gerpast +Gerabst +Gernfh +Gpr_fut +Gpr_past +Gpr_rsub +Gpr_nfh +Gpr_aor +Gna_per +Gna_impf +Gna_ferq +Gna_when1 +Gna_when2 +Gna_time1 +Gna_time2 +Gna_cond +Gna_2 +Iv +Abil +Coop +Pass +Cau
+
+Lexicon Root
+Numeral ;
+
+LEXICON Numeral
+bir NUM;
+iki NUM;
+onbir NUM ; 
+oniki NUM ; 
+yirmi:yirmi NUM ; 
+kırk:kırk NUM ;
+elli:elli NUM ;
+altmış:altmış NUM ; 
+seksen:seksen NUM ;  
+bin:bin NUM ;
+milion:milion NUM ;
+ikişär:ikişär NUM-DIST ;
+üçär:üçär NUM-DIST ;
+I:I NUM-ROMAN ; 
+II:II NUM-ROMAN ; 
+III:III NUM-ROMAN ; 
+IV:IV NUM-ROMAN ; 
+IX:IX NUM-ROMAN ; 
+V:V NUM-ROMAN ; 
+VI:VI NUM-ROMAN ; 
+VII:VII NUM-ROMAN ; 
+VIII:VIII NUM-ROMAN ; 
+X:X NUM-ROMAN ; 
+XI:XI NUM-ROMAN ; 
+XII:XII NUM-ROMAN ; 
+XIII:XIII NUM-ROMAN ; 
+XIV:XIV NUM-ROMAN ; 
+XIX:XIX NUM-ROMAN ; 
+XV:XV NUM-ROMAN ; 
+XVI:XVI NUM-ROMAN ; 
+XVII:XVII NUM-ROMAN ; 
+XVIII:XVIII NUM-ROMAN ; 
+XX:XX NUM-ROMAN ; 
+XXI:XXI NUM-ROMAN ; 
+XXII:XXII NUM-ROMAN ; 
+
+
+LEXICON NUM 
++Num: # ;
++Num+Ord:^inci # ;
+
+
+LEXICON NUM-DIST
+
++Num+Dist: # ;
+
+LEXICON NUM-ROMAN
++Num: # ;
